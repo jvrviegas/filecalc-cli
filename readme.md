@@ -11,7 +11,7 @@ Este desafio consiste em criar uma pequena CLI para ler um arquivo CSV e realiza
 
 # Aplicação
 
-A aplicação que será desenvolvida é uma CLI para realizar os cáculos de quantidade de carros de uma marca específica, quantidade de carros entre um intervalo de quilometragem e o valor total dos carros em um dado vendedor.
+A aplicação que será desenvolvida é uma CLI para realizar os cáculos de quantidade de carros de uma marca específica, quantidade de carros entre um intervalo de quilometragem e o valor total dos carros em uma dada concessionária.
 
 A aplicação utilizará o toolkit [Gluegun](https://infinitered.github.io/gluegun) para facilitar a organização e desenvolvimento da CLI.
 
@@ -31,11 +31,14 @@ _Programas necessários:_
 1. Abra um terminal e clone o repositório utilizando o comando `git clone https://github.com/jvrviegas/filecalc-cli`
 2. Entre na pasta utilizando `cd filecalc-cli`
 3. Instale todas as dependências com o comando `yarn`
-4. Para realizar o link da CLI localmente utilize o comando `yarn link`
+4. Execute os testes utilizando o comando `yarn test`
+5. Para realizar o link da CLI localmente utilize o comando `yarn link`
 6. Liste os comandos disponíveis utilizando o comando `filecalc help`
 
 ### :clipboard: Comandos
 
+- `version`: Exibe a versão atual da CLI.
+- `help`: Exibe os comandos disponíveis e suas descrições.
 - `brand`: Recebe o nome da marca como parâmetro e exibe a quantidade de carros desta marca. Pode ser utilizado junto com a flag `--list` para exibir a lista de carros.
 - `mileage`: Recebe o *minMileage* e o *maxMileage* como parâmetros e exibe a quantidade e a lista de carros que possuem o *mileage* entre esses valores.
 - `dealership`: Recebe o nome da concessionária como parâmetro e retorna o valor total de todos os carros dela.
