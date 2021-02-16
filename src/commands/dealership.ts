@@ -38,7 +38,11 @@ const dealership: GluegunCommand = {
     }
 
     const totalValue = sumDealershipCarsTotalValue(json, name);
-    const result = `${name} cars total value: $${totalValue.toLocaleString()}`;
+    const formattedTotalValue = totalValue.toLocaleString('en-GB', {
+      style: 'currency',
+      currency: 'EUR',
+    });
+    const result = `${name} cars total value: ${formattedTotalValue}`;
 
     print.success('Cars values succesfully summed!');
     print.info(result);

@@ -49,7 +49,9 @@ const mileage: GluegunCommand = {
     }
 
     const numberOfCars = countCarsByMileage(json, minMileage, maxMileage);
-    const result = `Number of cars between ${minMileage} and ${maxMileage}: ${numberOfCars}`;
+    const formattedMinMileage = parameters.first.toLocaleString();
+    const formattedMaxMileage = parameters.second.toLocaleString();
+    const result = `Number of cars between ${formattedMinMileage} km and ${formattedMaxMileage} km: ${numberOfCars}`;
 
     print.success('Cars counted succesfully!');
     print.info(result);
