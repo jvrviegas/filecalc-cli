@@ -10,15 +10,11 @@ export default async (toolbox: GluegunToolbox): Promise<void> => {
     return bold(blue(myText));
   }
 
-  function text(myText: string) {
-    return yellow(myText);
-  }
-
   function printCarPrettyLine(index: number, car: ICar) {
-    const brand = `${title('Brand: ')}${text(car.brand)}`;
-    const dealership = `${title(' - Dealership: ')}${text(car.dealership)}`;
-    const mileage = `${title(' - Mileage: ')}${text(car.mileage)}`;
-    const value = `${title(' - Value: ')}${text(car.value)}`;
+    const brand = `${title('Brand: ')}${yellow(car.brand)}`;
+    const dealership = `${title(' - Dealership: ')}${yellow(car.dealership)}`;
+    const mileage = `${title(' - Mileage: ')}${yellow(car.mileage)}`;
+    const value = `${title(' - Value: ')}${yellow(car.value)}`;
     print.info(`${index}. ${brand + dealership + mileage + value}`);
   }
 
