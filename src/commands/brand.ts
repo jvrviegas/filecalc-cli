@@ -6,7 +6,7 @@ const brand: GluegunCommand = {
   name: 'brand',
   alias: ['b'],
   description:
-    'Get the number of cars by brand (parameter: brand, optional flag: list)',
+    'Get the number of cars by brand (parameter: brand, optional flag to list cars: --list or -l)',
   run: async (toolbox) => {
     const { print, parameters, parseCsvToJson, printCarPrettyLine } = toolbox;
 
