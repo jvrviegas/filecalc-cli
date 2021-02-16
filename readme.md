@@ -34,10 +34,16 @@ _Programas necessários:_
 4. Para realizar o link da CLI localmente utilize o comando `yarn link`
 6. Liste os comandos disponíveis utilizando o comando `filecalc help`
 
+### :clipboard: Comandos
+
+- `brand`: Recebe o nome da marca como parâmetro e exibe a quantidade de carros desta marca. Pode ser utilizado junto com a flag `--list` para exibir a lista de carros.
+- `mileage`: Recebe o *minMileage* e o *maxMileage* como parâmetros e exibe a quantidade e a lista de carros que possuem o *mileage* entre esses valores.
+- `dealership`: Recebe o nome da concessionária como parâmetro e retorna o valor total de todos os carros dela.
+
 ## :hammer: Ferramentas utilizadas
 
-- :gear: **Gluegun** - Um kit de ferramentas para desenvolvimento de interfaces de linha de comando (CLIs) baseadas no Node.js em TypeScript ou JavaScript.
-- :open_file_folder: **CSV to JSON** - É um biblioteca para converter um arquivo CSV em JSON.
+- :gear: **Gluegun** - Um kit de ferramentas para desenvolvimento de interfaces de linha de comando (CLIs) baseadas em Node.js em TypeScript ou JavaScript.
+- :open-file-folder: **CSV to JSON** - É um biblioteca para converter um arquivo CSV em JSON.
 - 📄 **ESLint** - Ferramenta de análise de código para padronização e identificação de problemas.
 - 📄 **Prettier** - - Ferramenta para formatação de código
 
