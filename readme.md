@@ -37,7 +37,7 @@ _Programas necessários:_
 ## :hammer: Ferramentas utilizadas
 
 - :gear: **Gluegun** - Um kit de ferramentas para desenvolvimento de interfaces de linha de comando (CLIs) baseadas em Node.js em TypeScript ou JavaScript.
-- :open-file-folder: **CSV to JSON** - É um biblioteca para converter um arquivo CSV em JSON.
+- :open_file_folder: **CSV to JSON** - É um biblioteca para converter um arquivo CSV em JSON.
 - 📄 **ESLint** - Ferramenta de análise de código para padronização e identificação de problemas.
 - 📄 **Prettier** - - Ferramenta para formatação de código
 
